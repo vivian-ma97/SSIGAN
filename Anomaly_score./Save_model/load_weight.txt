@@ -1,1 +1,4 @@
 You can load our weight to test the result.
+You  can download our trained model weights from Baidu NetDisk and place them into the designated Save_model/ directory for further use
+
+The download link is :https://pan.baidu.com/s/1E7FLAOVkhYaTSRjP_e2Ukg?pwd=eat6       answer:eat6 
