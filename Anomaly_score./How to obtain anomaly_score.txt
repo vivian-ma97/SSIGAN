@@ -2,16 +2,23 @@ This directory provides code to compute anomaly detection scores using a trained
 
 
 ============================
-【1】Load the Pretrained GAN Model Weights
+【1】Load the  GAN Model Weights
 ============================
 
-1. Make sure you have placed the pretrained GAN model weights (typically `.pth` or `.pt` files) in the `trained_models/` directory.
-2. The main script will automatically load the weights at runtime, or you can customize the path in `main_generate_score.py`.
+1. Make sure you have placed the pretrained GAN model weights (typically `.h5` files) in the `Save_model/` directory.
+
 
 ============================
-【3】Run the Main Script to Generate Anomaly Scores
+【2】Run the Main Script to Generate Anomaly Scores
 ============================
 
 Please execute the following command:
 
     python test_our.py
+
+============================
+【3】 Normalize the Anomaly_score
+============================
+Please execute the following command:
+ run step1_caculate_anomaly_score_norm.m
+ run step2_save_norm_result.m
