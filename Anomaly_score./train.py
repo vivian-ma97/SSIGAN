@@ -12,7 +12,7 @@ if __name__ == '__main__':
     data = data['lake_mat']
 
 
-    # 保存为.pkl文件
+
     with open('X_train_radar.pkl', 'wb') as f:
         pickle.dump(data, f)
 
@@ -21,9 +21,9 @@ if __name__ == '__main__':
     x_train = np.transpose(x_train)
 
 
-        # Setting training phase
+ 
     Epoches = 10000
-    Save_interval = 100  # 每隔多少次保存一张图片
+    Save_interval = 100  
     Save_model_interval = 100
     Batch_size = 1
     # Input shape
