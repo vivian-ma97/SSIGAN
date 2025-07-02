@@ -71,13 +71,13 @@ random_sine = True
 
 
 
-generator = load_model('save_model/gen_7400.h5')
+generator = load_model('Save_model/gen_7400.h5')
 
 noise = generate_noise(latent_size, batch_size, random_sine)
 gen_signals = generator.predict(noise)
 
 
-d = load_model('save_model/dis_7400.h5')
+d = load_model('Save_model/dis_7400.h5')
 
 
 
