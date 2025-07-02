@@ -1,5 +1,5 @@
 """
-加载模型进行异常检测
+Anomaly detection
 
 cov_loss
 
