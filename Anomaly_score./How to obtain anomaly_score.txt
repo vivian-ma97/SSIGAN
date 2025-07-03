@@ -22,3 +22,7 @@ Please execute the following command:
 Please execute the following command:
  run step1_caculate_anomaly_score_norm.m
  run step2_save_norm_result.m
+============================
+【4】 Normalize the Anomaly_score result
+============================
+This is our finally normalize Anomaly_score result.
