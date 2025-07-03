@@ -1,1 +1,33 @@
+===============================
+Step-by-Step Instruction
+===============================
+
+Step 1: Generate R1 (Normalized Anomaly Score)
+-----------------------------------------------
+1. Go to the "Anomaly_score" folder.
+2. Run all scripts inside this folder.
+3. After completion, you will obtain the normalized anomaly scores (R1),
+   which will be saved in the "Normalized_Anomaly_score" folder.
+
+Step 2: Generate R2 (Corrected Bed Reflectivity, CBRP)
+------------------------------------------------------
+1. Go to the "CBRP" folder.
+2. Run the script named: Step_2_caculate_CBRP.m
+3. This will output:
+   - The corrected CBRP values for each file
+   - The maximum value of CBRP (max_CBRP) for normalization
+   All results will be saved in the folder: final_CBRP_chu
+
+Step 3: Compute the Final Metric R3
+------------------------------------
+1. Run the script: step3_caculate_r3.m
+2. This script will combine R1 and R2 to generate the final wetness score R3.
+
+Notes:
+------
+- Make sure all intermediate results (normalized anomaly scores and corrected CBRP values)
+  are correctly saved before running step3_caculate_r3.m
+- The R3 score is computed as:
+    R3 = sqrt((R1 - R1_ref)^2 + (R2 - R2_ref)^2)
+
 
