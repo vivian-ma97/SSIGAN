@@ -1,1 +1,5 @@
+Our method for calculating the CBRP is based on the study *"Multisystem Synthesis of Radar Sounding Observations of the Amundsen Sea Sector From the 2004–2005 Field Season"* by Chu et al [1]. In the AGAP region, we derived an attenuation rate of 12.76 dB/km.
+
+If you use this method please cite this article.
+[1] Chu, W., Hilger, A. M., Culberg, R., Schroeder, D. M., Jordan, T. M., Seroussi, H., et al. (2021). Multisystem synthesis of radar sounding observations of the Amundsen Sea sector from the 2004–2005 field season. Journal of Geophysical Research: Earth Surface, 126, e2021JF006296. https://doi.org/10.1029/2021JF006296
 
