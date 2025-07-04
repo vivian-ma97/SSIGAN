@@ -1,4 +1,26 @@
-The radar data used in this project are publicly available from the Center for Remote Sensing of Ice Sheets (CReSIS). Specifically, we utilize the dataset from the 2009 Antarctica TO Gambit campaign, which can be accessed at the following link:
+===============================
+Radar Data and Preprocessing Guide
+===============================
+
+1. Data Source
+--------------
+The radar data used in this project are publicly available from the Center for Remote Sensing of Ice Sheets (CReSIS). Specifically, we utilize the dataset from the 2009 Antarctica TO Gambit campaign:
+
+Access link:
 https://data.cresis.ku.edu/data/rds/2009_Antarctica_TO_Gambit/
 
-Please refer to the CReSIS Data Access Policy before using the dataset.
+Before using the dataset, please refer to the official CReSIS Data Access Policy.
+
+2. Dataset Summary
+------------------
+After downloading the entire dataset, you will obtain a total of 923 B-scope radar files. However, only 892 of them are considered valid for this project. The remaining 31 files were excluded due to issues such as corrupted radar traces or unusable signal channels.
+
+3. Anomaly_score Input Preparation
+----------------------------------
+The radar waveforms are used for testing put it in the Anomaly_score file. These must be cropped along the manually selected pick interface (e.g., ice-bed boundary) to a fixed signal length of 200 samples.
+
+You have two options for preprocessing:
+  a) Write a simple script to crop the data to 200 samples per waveform using your preferred language (MATLAB, Python, etc.).
+  b) Use the provided preprocessing script under the `/Data_preparation/` folder to generate ready-to-use `.mat` or `.pkl` input files.
+
+Make sure to save the processed files in the folder `pick_data/` for compatibility with subsequent scripts.
