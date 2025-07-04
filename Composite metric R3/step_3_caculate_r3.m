@@ -26,7 +26,7 @@ for i = 1:len_file
     file_name1 = filelist1(i).name;
     
     % Load anomaly_CBRP data (contains red points)
-    AC_path = fullfile('anomaly_CBRP_chu\', file_name1);    %%%For the inventoried subglacial lakes in the AGAP region, the combined Anomaly_score and CBRP metrics have been organized and stored in the folder named Acope.
+    AC_path = fullfile('anomaly_CBRP_chu\', file_name1);    %%For the inventoried subglacial lakes in the AGAP region, the combined Anomaly_score and CBRP metrics have been organized and stored in the folder named Acope.
     load(AC_path);      % X_anomaly, Y_CBRP
     
     % Calculate normalized coordinates for red points
@@ -89,16 +89,7 @@ for i = 1:len_file
     all_r1 = [all_r1, x_points'];
     all_r2 = [all_r2, y_points'];
     all_r3 = [all_r3, distances'];
-    
-    
-    % Example visualization (optional)
-%     figure;
-%     histogram(distances, 50);
-%     title(sprintf('Distance to Reference Point for Lake %d', i));
-%     xlabel('Distance');
-%     ylabel('Count');
-%     saveas(gcf, fullfile(save_folder, [basename '_distance_hist.png']));
-%     close(gcf);
+
 end
 
 disp('All files processed.');
