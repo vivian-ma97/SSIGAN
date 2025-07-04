@@ -104,7 +104,7 @@ step3_caculate_r3.m
 This script combines R1 and R2 using:
 
 
-$ R_3 = \sqrt{(R_1 - R_{1,\text{ref}})^2 + (R_2 - R_{2,\text{ref}})^2} $
+R3 = sqrt((R1 - R1_ref)^2 + (R2 - R2_ref)^2)
 
 
 ---
