@@ -1,11 +1,5 @@
 # SSIGAN: Subglacial Wetness Detection via GAN-based Anomaly Scoring
 
-> ⚠️ **Notice:** This work is currently under peer review.  
-> Please **do not use, redistribute, or download** the code or data until the paper has been officially accepted.  
-> All materials will be made publicly available after final acceptance.
-
----
-
 ## 📘 Project Overview
 
 **SSIGAN** is an unsupervised generative framework for identifying subglacial wetness conditions from radar echograms. It leverages GAN-based anomaly detection to distinguish basal water bodies from dry bedrock using radar A-scope signals.
@@ -115,24 +109,15 @@ R_3 = \sqrt{(R_1 - R_{1,\text{ref}})^2 + (R_2 - R_{2,\text{ref}})^2}
 
 ---
 
-## ✅ Execution Checklist
-
-| Step | Description                             | Output Folder                |
-|------|-----------------------------------------|------------------------------|
-| 1    | Preprocess and crop waveform signals    | `pick_data/`                 |
-| 2    | Run GAN anomaly detection               | `Anomaly_score/`             |
-| 3    | Normalize anomaly scores (R1)           | `Normalized_Anomaly_score/`  |
-| 4    | Compute corrected reflectivity (R2)     | `final_CBRP_chu/`            |
-| 5    | Compute final wetness score (R3)        | Output saved via script      |
-
----
 
 ## 📄 License
 
-This repository will be released under an open-source license upon final acceptance of the associated publication.
+This repository will be released under an open-source license upon final acceptance of the associated publication. **Notice:** This work is currently under peer review.  
+ Please do not use, redistribute,the code or data until the paper has been officially accepted.   All materials will be made publicly available after final acceptance.
 
 ---
 
+
 ## 📬 Contact
 
-For questions or collaborations, please contact the project maintainer after the peer-review stage is complete.
+For questions or collaborations, please contact the project maintainer. You can reach me at qianma@tongji.edu.cn — I am also available to provide remote assistance with code execution. Please don’t hesitate to get in touch.
