@@ -225,7 +225,7 @@ class DCGAN:
             # -------------------
 
             # Train the generator (Goal: fool discriminator)
-            g_loss = self.combine.train_on_batch(noise, vaild)
+            g_loss = self.combine.train_on_batch(noise, vaild)+ self.cov_info* self.cosine_loss
 
             # print the progresss
             print("%d [D loss: %f, acc.: %.2f%%] [G loss: %f]" % (epoch, d_loss[0], 100 * d_loss[1], g_loss))
