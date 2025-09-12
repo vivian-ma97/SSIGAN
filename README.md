@@ -40,20 +40,6 @@ Save_model/
 
 ### Step 2: Generate Anomaly Scores
 Run:
-
-```bash
-python test_our.py
-```
-
-This will:
-- Load cropped waveforms from `pick_data/`
-- Generate anomaly scores using the trained GAN
-- Save results to: `Anomaly_score/`
-
----
-
-### Step 3: Normalize Anomaly Scores (R1)
-
 Go to the `Anomaly_score/` folder and run:
 
 ```matlab
@@ -69,7 +55,7 @@ Normalized_Anomaly_score/
 
 ---
 
-### Step 4: Compute Corrected Bed Reflectivity (R2, a.k.a. CBRP)
+### Step 3: Compute Corrected Bed Reflectivity (R2, a.k.a. CBRP)
 
 Navigate to the `CBRP/` folder and run:
 
@@ -93,7 +79,7 @@ final_CBRP_chu/
 
 ---
 
-### Step 5: Generate Final Metric R3
+### Step 4: Generate Final Metric R3
 
 Run:
 
