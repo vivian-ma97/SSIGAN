@@ -1,28 +1,11 @@
-This directory provides code to compute anomaly detection scores using a trained GAN (Generative Adversarial Network) model, specifically designed for radar A-scope signals.
+This directory provides code to compute anomaly detection scores using a trained GAN (Generative Adversarial Network) model, specifically designed for radar A-scope signals. We give our result for review test
 
-
-============================
-【1】Load the  GAN Model Weights
-============================
-
-1. Make sure you have placed the pretrained GAN model weights (typically `.h5` files) in the `Save_model/` directory.
-
-
-============================
-【2】Run the Main Script to Generate Anomaly Scores
-============================
-
-Please execute the following command:
-
-    python test_our.py
-
-============================
-【3】 Normalize the Anomaly_score
+【1】 Normalize the Anomaly_score
 ============================
 Please execute the following command:
  run step1_caculate_anomaly_score_norm.m
  run step2_save_norm_result.m
 ============================
-【4】 Normalize the Anomaly_score result
+【2】 Normalize the Anomaly_score result
 ============================
 This is our finally normalize Anomaly_score result.
